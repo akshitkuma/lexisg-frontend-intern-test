@@ -45,7 +45,7 @@ On click → opens simulated PDF viewer, scrolls to and highlights **Paragraph 7
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/lexisg-frontend-intern-test.git
+git clone https://github.com/akshitkuma/lexisg-frontend-intern-test.git
 cd lexisg-frontend-intern-test
 ```
 
@@ -102,11 +102,11 @@ lexisg-frontend-intern-test/
 
 
 ```
-📷 ![Lexi Screenshot](./public/Chat.png)  
+📷 ![Lexi Screenshot](./Chat.png)  
 *Chat Interface with Answer and Citation Display*
 
-![Lexi Screenshot](./public/download.png)  
-*When Click On Ciation have Highlight Paragraph and Download button to Download Pdf*
+![Citation Highlight](./download.png)  
+*When Click On Citation: Highlight Paragraph & Download Judgment PDF*
 
 
 ```
