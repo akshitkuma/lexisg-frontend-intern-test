@@ -101,15 +101,12 @@ lexisg-frontend-intern-test/
 ## 📸 Screenshot
 
 
-```
 📷 ![Lexi Screenshot](./Chat.png)  
 *Chat Interface with Answer and Citation Display*
 
 ![Citation Highlight](./download.png)  
 *When Click On Citation: Highlight Paragraph & Download Judgment PDF*
 
-
-```
 
 ---
 
