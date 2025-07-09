@@ -110,10 +110,10 @@ lexisg-frontend-intern-test/
 
 ---
 
-## 🌐 [Bonus] Hosting (Optional)
+## 🌐 Live Hosting 
 
 Deployed Live At:  
-➡️ https://your-username.github.io/lexisg-frontend-intern-test *(replace if hosted)*
+➡️ https://lexisg-frontend-intern-test-ten-kappa.vercel.app/
 
 ---
 
