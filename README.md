@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# Lexisg Frontend Intern Test – Legal Assistant Interface
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A minimal frontend interface for a Lexi-style legal assistant. This React-based app simulates how Lexi helps users trace AI-generated legal answers back to real documents with clickable citations.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🎯 Objective
 
-### `npm start`
+- Ask a legal question
+- See a simulated AI-generated legal answer
+- View citation(s) from real judgments
+- Click the citation to open a **mock PDF viewer**
+- Simulate scroll and highlight to the cited **paragraph**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 💬 Simulation Example
 
-### `npm test`
+### ▶️ Query Used:
+```
+"In a motor accident claim where the deceased was self-employed and aged 54–55 years at the time of death, is the claimant entitled to an addition towards future prospects in computing compensation under Section 166 of the Motor Vehicles Act, 1988? If so, how much?"
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ✅ Simulated Answer:
+> Yes, under Section 166 of the Motor Vehicles Act, 1988, the claimants are entitled to an addition for future prospects even when the deceased was self-employed and aged 54–55 years at the time of the accident. In Dani Devi v. Pritam Singh, the Court held that 10% of the deceased’s annual income should be added as future prospects.
 
-### `npm run build`
+### 📚 Citation Text:
+> “as the age of the deceased at the time of accident was held to be about 54–55 years by the learned Tribunal, being self-employed, as such, 10% of annual income should have been awarded on account of future prospects.”  
+> *(Para 7 of the document)*
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+On click → opens simulated PDF viewer, scrolls to and highlights **Paragraph 7**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Technologies Used
 
-### `npm run eject`
+- React.js
+- Tailwind CSS
+- React Icons
+- HTML5 + CSS3
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📥 Installation & Running Locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the repository**
+```bash
+git clone https://github.com/your-username/lexisg-frontend-intern-test.git
+cd lexisg-frontend-intern-test
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Install dependencies**
+```bash
+npm install
+```
 
-## Learn More
+3. **Start the development server**
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Open in browser**
+```
+http://localhost:3000
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📁 File Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+lexisg-frontend-intern-test/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── ChatInterface.jsx      # Main chat logic
+│   │   ├── Citation.jsx           # Handles clickable citation card + PDF logic
+│   │   ├── Message.jsx            # Message bubble UI
+│   │   └── PDFViewer.jsx          # (Optional for real PDF embed)
+│   ├── App.js
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🔗 Citation Handling
 
-### Making a Progressive Web App
+- Each answer includes a clickable citation box
+- On click:
+  - Opens a new tab (simulated PDF viewer)
+  - Scrolls to and highlights the cited paragraph
+  - Displays a mock paragraph with the citation text and **Para 7** label
+  - Includes a "Download Judgment PDF" button linking to the actual PDF
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🧠 *This simulates traceability from AI answer to real legal documents, just like Lexi.*
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📸 Screenshot
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+📷 ![Lexi Screenshot](./public/Chat.png)  
+*Chat Interface with Answer and Citation Display*
 
-### `npm run build` fails to minify
+![Lexi Screenshot](./public/download.png)  
+*When Click On Ciation have Highlight Paragraph and Download button to Download Pdf*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+```
+
+---
+
+## 🌐 [Bonus] Hosting (Optional)
+
+Deployed Live At:  
+➡️ https://your-username.github.io/lexisg-frontend-intern-test *(replace if hosted)*
+
+---
+
+## 🔮 Future Ideas
+
+- Real backend integration for live answers
+- PDF.js for rendering actual PDF content
+- User authentication and saved history
+- Dark mode toggle
+- Mobile keyboard-aware scroll fix
+
+---
